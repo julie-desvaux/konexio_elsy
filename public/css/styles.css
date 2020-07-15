@@ -1,0 +1,21 @@
+.box {
+    height: 190px;
+    padding: 10px;
+    text-align: center;
+}
+.box:nth-child(even) {
+    background-color: #CCC;
+}
+.box:nth-child(odd) {
+    background-color: #AAA;
+}
+.water {
+    background-color: #3A85FF;
+}
+.material-icons {
+    font-size: 100px;
+    color:black;
+}
+.favorite {
+    color: red;
+}
