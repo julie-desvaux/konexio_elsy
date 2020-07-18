@@ -23,6 +23,8 @@ class App extends React.Component {
       steps: 3000,
     }
     this.onHeartChange = this.onHeartChange.bind(this);
+    this.onStepsChange = this.onStepsChange.bind(this);
+    this.onTemperatureChange = this.onTemperatureChange.bind(this);
   }
 
   onHeartChange(val) {
@@ -33,9 +35,17 @@ class App extends React.Component {
   }
 
   onStepsChange(val) {
+    console.log('App#onStepsChange');
     this.setState({
       steps: val
-    })
+    });
+  }
+
+  onTemperatureChange(val) {
+    console.log('App#onTemperatureChange');
+    this.setState({
+      temperature: val
+    });
   }
 
   render() {
@@ -43,20 +53,25 @@ class App extends React.Component {
       <>
         <div className="container-fluid">
           <div className="row">
-            <Water water={this.state.water}/>
+            <Water water = {this.state.water}/>
             <Person 
-              steps={this.state.steps}
-              min={MIN_STEPS}
-              max={MAX_STEPS}
-              onChange={this.onStepsChange}
+              steps = {this.state.steps}
+              min = {MIN_STEPS}
+              max = {MAX_STEPS}
+              onChange = {this.onStepsChange}
             />
             <HeartRate 
-              heart={this.state.heart}
-              min={MIN_HEART}
-              max={MAX_HEART}
-              onChange={this.onHeartChange}
+              heart = {this.state.heart}
+              min = {MIN_HEART}
+              max = {MAX_HEART}
+              onChange = {this.onHeartChange}
             />
-            <Sun temperature={this.state.temperature}/>
+            <Sun 
+              temperature = {this.state.temperature}
+              min = {MIN_TEMPERATURE}
+              max = {MAX_TEMPERATURE}
+              onChange = {this.onTemperatureChange}
+            />
           </div>          
         </div>        
       </>

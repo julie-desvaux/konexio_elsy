@@ -8,13 +8,16 @@ class HeartRate extends React.Component {
         return (
             <>
                 <div className="box col-md-2 col-6">
-                    <Icone icone={'favorite'} />
-                    <p>{this.props.heart}</p>
+                    <Icone 
+                        icone = {'favorite'} 
+                        color = {'red'}
+                    />
+                    <p>{this.props.heart} bpm</p>
                     <Slider 
-                        min={this.props.min}
-                        max={this.props.max}
-                        onChange={this.props.onChange}
-                        value={this.props.heart}
+                        min = {this.props.min}
+                        max = {this.props.max}
+                        onChange = {this.props.onChange}
+                        value = {this.props.heart}
                     />
                 </div>
             </>  

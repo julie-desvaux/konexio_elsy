@@ -5,9 +5,12 @@ class Water extends React.Component {
     render() {
         return (
             <>
-                <div className="box col-md-2 col-6">
-                    <Icone icone={'local_drink'}/>
-                    <p>{this.props.water}</p>
+                <div className="box col-md-2 col-6 water">
+                    <Icone 
+                        icone = {'local_drink'}
+                        color = {'white'}
+                    />
+                    <p>{this.props.water} L</p>
                 </div>
             </>
         );

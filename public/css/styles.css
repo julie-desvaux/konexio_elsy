@@ -10,12 +10,9 @@
     background-color: #AAA;
 }
 .water {
-    background-color: #3A85FF;
+    background-color: #3A85FF !important;
 }
 .material-icons {
     font-size: 100px;
     color:black;
-}
-.favorite {
-    color: red;
 }
