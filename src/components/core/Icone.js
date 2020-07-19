@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 class Icone extends React.Component {
     render() {
@@ -7,9 +8,14 @@ class Icone extends React.Component {
                 {/* <span className={this.props.icone==='favorite' ? "material-icons favorite" : "material-icons"}>
                     {this.props.icone}
                 </span> */}
-                <span className="material-icons" style={{ color: this.props.color}}>
+                <motion.span 
+                    className="material-icons" 
+                    style={this.props.style}  
+                    animate={this.props.animate}
+                    transition={this.props.transition}
+                >
                     {this.props.icone}
-                </span>
+                </motion.span>
             </>
         );
     }
