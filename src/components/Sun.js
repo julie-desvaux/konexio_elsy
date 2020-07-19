@@ -4,7 +4,6 @@ import Slider from './core/Slider';
 
 class Sun extends React.Component {
     render() {
-        console.log('Sun#render this.props',this.props);
         return (
             <>
                 <div className="box col-md-2 col-6">
