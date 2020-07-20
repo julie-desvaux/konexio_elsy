@@ -22,7 +22,7 @@ class Sun extends React.Component {
                 <div className="box col-md-2 col-6">
                     <Icone 
                         icone = {'wb_sunny'}
-                        style = {style}                        
+                        style = {style}
                         animate = {animate}
                         transition = {transition}
                     />
